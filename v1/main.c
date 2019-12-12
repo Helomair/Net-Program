@@ -39,7 +39,7 @@ int main(int argc, char** argv)
     /* 使用任何在本機的對外 IP */
     serv_addr.sin_addr.s_addr = INADDR_ANY;
     /* 使用 80 Port */
-    serv_addr.sin_port = htons(8088);
+    serv_addr.sin_port = htons(8080);
 
     /* 開啟網路監聽器 */
     if (bind(listenfd, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) < 0)
